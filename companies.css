@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+/*
+	Companies Style Sheet
+	Author: Nick Sheppard 
+	Date: 	
+	Filename:
+*/
+
+/* html and body styles */
+
+
+article h1 {
+		background-color: white;
+		text-align: center;
+		padding-bottom: 5px;
+		margin-bottom: 20px;
+		margin-top: 0;
+		clear: both;
+	}
+article p {
+	border: 2px solid black;
+	background-color: #ebeb2a;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	text-align: center;
+	font-size: x-large;
+	
+}
+
+
+/* Table styles */
+
+table {
+	
+	background: white;
+	width: 80%;
+	margin-top: 20px;	
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	border: 10px rgb(235, 235, 42);
+	border-collapse: collapse;
+	
+	
+}
+table th, td {
+	text-align: center;
+	border: 5px solid rgb(235, 235, 42);
+	padding-top: 5px;
+	padding-bottom: 5px;
+	
+}
+
+table td.description {
+	text-align: left;
+	padding-left: 5px;
+	padding-right: 5px;
+	
+}
+
+table td.platform {
+	color: rgb(140, 0, 255);
+}
+
+table img {
+	width: 60%;
+
+}
+table#mobile {
+	display: none;
+}
+
+/* Tablet screens */
+@media only screen and (max-width: 768px) {
+	table img {
+		display: none;
+	}
+table td.desciption {
+	display: none;
+	}
+}
+
+/*  Mobile screen */
+@media only screen and (max-width: 480px) {
+	table#desktop {
+		display: none;
+	}
+	table#mobile {
+		display: table;
+	}
+	table#mobile td.mobile {
+		color: rgb(140, 0, 255);
+	}
+}
